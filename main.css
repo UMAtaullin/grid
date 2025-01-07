@@ -5,8 +5,9 @@ body {
 .container {
   display: grid;
   /* 10 раз по 1fr */
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 200px 200px;
+  grid-auto-rows: 100px;
 }
 
 .container > div {
