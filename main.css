@@ -1,0 +1,22 @@
+body {
+  background: linear-gradient(107.32deg, #804BD8 5.53%, #544AD8);
+}
+
+.container {
+  display: grid;
+  /* 10 раз по 1fr */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 200px 200px;
+}
+
+.container > div {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border: 2px solid #fe7A71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Выражение .container > div {} выбирает только дочерние элементы элемента с классом .container, в то время как выражение .container div {} без знака «>» выбирает любого потомка, а не только непосредственных потомков.*/
