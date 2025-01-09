@@ -8,6 +8,7 @@ body {
   /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: [start]1fr [middle]1fr 1fr[end];
   grid-auto-rows: 100px;
+  grid-auto-flow: dense;
 }
 
 .c1 {
