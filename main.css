@@ -5,14 +5,16 @@ body {
 .container {
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: [start]1fr [middle]1fr 1fr[end];
   grid-auto-rows: 100px;
 }
 
 .c1 {
-  /* grid-column-start: 1;
-  grid-column-end: -1; */
-  grid-column: 1 / -1;
+  /* grid-column: 1 / span 3; */
+  /* grid-column: 1 / 3; */
+  grid-column-start: middle;
+  grid-column-end: end;
 }
 
 .container > div {
