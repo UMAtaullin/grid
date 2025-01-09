@@ -3,9 +3,12 @@ body {
 }
 
 .container {
+  border: 2px solid white;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px 100px;
+  height: 500px;
+  /* justify-items: stretch;
+  align-items: end; */
+  /* align-content: space-around; */
 }
 
 .container > div {
