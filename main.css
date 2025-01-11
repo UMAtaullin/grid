@@ -7,12 +7,22 @@ body {
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1f 1fr 1fr;
+  grid-template-areas: 
+    'h h h' 
+    's b b' 
+    'f f f';
 }
-
 .header {
-  /* grid-column: 1 / -1;
-  grid-row: 1 / 6; */
-  grid-area: 1 / 1 / 3 / 4;
+  grid-area: h;
+}
+.body {
+  grid-area: b;
+}
+.sidebar {
+  grid-area: s;
+}
+.footer {
+  grid-area: f;
 }
 
 .container > div {
