@@ -7,25 +7,41 @@ body {
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1f 1fr 1fr;
-  grid-template-areas: 
-    'h h h' 
-    's b b' 
+  grid-template-areas:
+    'h h h'
+    's b b'
     'f f f';
 }
+
 .header {
   grid-area: h;
 }
+
 .body {
   grid-area: b;
 }
+
 .sidebar {
   grid-area: s;
 }
+
 .footer {
   grid-area: f;
 }
 
-.container > div {
+/* Медиа для мобильных устройств */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'h'
+      'b'
+      's'
+      'f'
+  }
+}
+
+.container>div {
   font-weight: bold;
   font-size: 20px;
   color: white;
